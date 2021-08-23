@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cálculo Finiquito</title>
+  </head>
+  <body>
+    <h1>Cálculo finiquito</h1>
+  <script>
+        var dias = prompt("¿Cuántos dias lleva trabajado?");
+        var m_dias = prompt("¿Cúantos días de vacaciones ha hecho validas?")
+        var $dias = parseFloat(dias);
+        var $m_dias = parseFloat(m_dias);
+        var vacaciones = ( 1.25 / 30 );
+        var $vacaciones = vacaciones * $dias;
+        var p_vacaciones = $vacaciones - $m_dias
+        document.write("el resultado del número de <strong>vacaciones que tiene</strong> segun sus días hábiles trabajados son de: " + $vacaciones);
+
+        document.write(" el resultado del número de <strong>vacaciones pendientes</strong> son de: "+ p_vacaciones)
+
+        var x = prompt("cuantos días inhabiles hay sumando sus vacaciones habiles a partir del día siguiente de su finiquito ")
+        var i_x = parseFloat(x)
+        document.write(" el resultado sus feriados proporcionales son de: " + i_x)
+        var aix = i_x + p_vacaciones
+        var sueldo = prompt("Cuál es  su sueldo base + comisiones (o promedio los últimos 3 meses de sueldo?");
+        var $sueldo = parseFloat(sueldo);
+        var diatrabajado = $sueldo / 30;
+        var $diatrabajado = parseFloat(diatrabajado)
+
+        var t_pagar = $diatrabajado * aix;
+
+        document.write(" el total a pagar por sus dias trabajados son de: " + t_pagar)
+
+
+    </script>
+  </body>
+</html>
